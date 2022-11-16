@@ -198,9 +198,7 @@ export const Place = () => {
 
   }
 
-  // const handleSearch = (search) => {
 
-  // }
 
   const itemsFilter = itemcol.filter((item) => {
       switch (colID) {
@@ -232,7 +230,7 @@ export const Place = () => {
             </li>
           ))}
         </ul>
-        <select defaultValue={colID} className="block border-4 outline-none p-2 w-full  md:hidden" name="" id=""  onClick={(e) => handleCol(e.currentTarget.value)}>
+        <select defaultValue={colID} className="block border-4 outline-none p-2 w-full  md:hidden"  onClick={(e) => handleCol(e.currentTarget.value)}>
           <option value={colID}>All</option>
           {items.map((item) => (
             <option
